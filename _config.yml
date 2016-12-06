@@ -1,0 +1,25 @@
+title: Maple
+timezone: America/New_York
+url: 
+description: > #
+  Collaborative Fund is a leading source of capital for entrepreneurs pushing
+  the world forward.
+permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+theme: maple
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: |2+
+
+
+
+sass:
+  style: compressed
+repository: 
+date_format: "%b %-d, %Y"
