@@ -1,6 +1,14 @@
-<header class="header container container--wide">
-  This is the header
-  <nav>
-    This is the nav
+<header class="header container container--narrow">
+  <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
+  <nav class="header__nav">
+    <ul class="header__nav__items">
+      {% capture nav %}
+        {% for item in site.data.navigation %}
+          <li class="header__nav__item">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </li>{% unless forloop.last %}{{ site.nav_separator | default: '' }}{% endunless %}
+        {% endfor %}
+      {% endcapture %}{{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
+    </ul>
   </nav>
 </header>

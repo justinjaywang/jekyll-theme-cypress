@@ -1,0 +1,10 @@
+---
+title: Montpelier maple
+date: 2016-01-01
+image: /uploads/maple.jpg
+tags: hardwoods
+---
+
+![](/uploads/maple.jpg)
+
+Acer monspessulanum (Montpellier maple) is a species of maple native to the Mediterranean region from Morocco and Portugal in the west, to Turkey, Syria, Lebanon, and Israel in the east, and north to the Jura Mountains in France and the Eifel in Germany.

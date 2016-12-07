@@ -2,8 +2,27 @@ title: Maple
 timezone: America/New_York
 url: 
 description: > #
-  Collaborative Fund is a leading source of capital for entrepreneurs pushing
-  the world forward.
+  A portfolio theme for Jekyll and Siteleaf.
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/:title/"
+    layout: post
+    image: 
+    tags: 
 permalink: pretty
 exclude:
 - Gruntfile.js
@@ -11,7 +30,7 @@ exclude:
 - package.json
 - README*
 - node_modules
-- ".gitignore"
+- '.gitignore'
 theme: maple
 markdown: kramdown
 highlighter: rouge
@@ -22,4 +41,4 @@ excerpt_separator: |2+
 sass:
   style: compressed
 repository: 
-date_format: "%b %-d, %Y"
+date_format: '%b %-d, %Y'
