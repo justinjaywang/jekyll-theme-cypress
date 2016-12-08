@@ -1,4 +1,4 @@
-# jekyll-theme-maple
+# jekyll-theme-cypress
 
 A portfolio theme for Jekyll and Siteleaf.
 
@@ -7,13 +7,13 @@ A portfolio theme for Jekyll and Siteleaf.
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "jekyll-theme-maple"
+gem "jekyll-theme-cypress"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: jekyll-theme-maple
+theme: jekyll-theme-cypress
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jekyll-theme-maple
+    $ gem install jekyll-theme-cypress
 
 ## Usage
 

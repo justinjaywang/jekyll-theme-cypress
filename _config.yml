@@ -1,8 +1,8 @@
-title: Maple
+title: Cypress
 timezone: America/New_York
 url: 
 description: > #
-  A portfolio theme for Jekyll and Siteleaf.
+  Cypress is a Siteleaf theme for portfolios.
 collections:
   posts:
     title: Posts
@@ -31,7 +31,7 @@ exclude:
 - README*
 - node_modules
 - '.gitignore'
-theme: jekyll-theme-maple
+theme: jekyll-theme-cypress
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: |2+
@@ -42,4 +42,5 @@ sass:
   style: compressed
 repository: 
 theme_date_format: '%b %-d, %Y'
-theme_sort: 'position'
+theme_sort: 'title'
+theme_title_image: 

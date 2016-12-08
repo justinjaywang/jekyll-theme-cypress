@@ -1,5 +1,5 @@
 ---
-title: San Gabriel
+title: San Gabriel Range
 date: 1907-01-01
 image: /uploads/10.jpg
 tags: photographs
