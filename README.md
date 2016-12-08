@@ -1,6 +1,6 @@
 # jekyll-theme-cypress
 
-A portfolio theme for Jekyll and Siteleaf.
+A theme for portfolios, for Jekyll and Siteleaf.
 
 ## Installation
 
