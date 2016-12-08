@@ -1,14 +1,22 @@
 <header class="header container container--narrow">
+  {% unless site.show_title == false %}
   <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
-  <nav class="header__nav">
-    <ul class="header__nav__items">
-      {% capture nav %}
-        {% for item in site.nav %}
-          <li class="header__nav__item">
-            <a href="{{ item.url }}">{{ item.title }}</a>
-          </li>{% unless forloop.last %}{{ site.nav_separator | default: '' }}{% endunless %}
-        {% endfor %}
-      {% endcapture %}{{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
-    </ul>
-  </nav>
+  {% endunless %}
+  {% if site.show_description == true %}
+  <p class="header__description">{{ site.description }}</p>
+  {% endif %}
+  {% if site.nav %}
+    <nav class="header__nav">
+      <ul class="header__nav__items">
+        {% capture nav %}
+          {% for item in site.nav %}
+            <li class="header__nav__item">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>{% unless forloop.last %}{{ site.nav_separator | default: '' }}{% endunless %}
+          {% endfor %}
+        {% endcapture %}
+        {{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
+      </ul>
+    </nav>
+  {% endif %}
 </header>

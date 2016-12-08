@@ -1,6 +1,6 @@
 ---
 title: Petaluma
-date: 1947-01-01
+date: 1947-09-01
 image: /uploads/6.jpg
 tags: horticulture
 ---

@@ -1,3 +1,6 @@
+{% if include.active_id %}
+  {% assign active_id = include.active_id %}
+{% endif %}
 <ul class="post-previews container container--wide">
   <div class="row">
     {% if site.post_sort %}
@@ -6,14 +9,14 @@
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% endif %}
     {% for post in sorted_posts %}
-      <li class="post-preview col quarter">
-        {% if post.image %}
-          <a href="{{ post.url }}">
+      {% assign current_id = post.id %}
+      <li class="post-preview col quarter{% if current_id == active_id %} active{% endif %}">
+        <a href="{{ post.url }}" class="post-preview__link">
+          {% if post.image %}
             <img src="{{ post.image }}" class="post-preview__thumbnail">
-          </a>
-        {% endif %}
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {% include post-meta.html %}
+          {% endif %}
+          <h4>{{ post.title }}</h4>
+        </a>
       </li>
     {% endfor %}
   </div>

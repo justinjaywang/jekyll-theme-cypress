@@ -1,6 +1,6 @@
 ---
 title: Papaver Bracteatum
-date: 1895-01-01
+date: 1895-12-01
 image: /uploads/18.jpg
 tags: horticulture
 ---

@@ -1,6 +1,6 @@
 ---
 title: Ventura
-date: 1971-01-01
+date: 1971-03-01
 image: /uploads/16.jpg
 tags: graphics
 ---

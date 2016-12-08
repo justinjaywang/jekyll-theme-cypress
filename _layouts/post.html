@@ -2,7 +2,17 @@
 layout: default
 ---
 
-<main class="container container--narrow">
-  <h1 class="title">{{ page.title }}</h1>
-  {{ content }}
+<main class="main container container--narrow">
+  <h1 class="main__title">{{ page.title }}</h1>
+  <section class="longform">
+    {{ content }}
+  </section>
+  {% unless site.show_date == false %}
+    {% if page.date %}
+      {% assign date_format = site.date_format | default: '%-d %b %Y' %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="main__date">{{ page.date | date: date_format }}</time>
+    {% endif %}
+  {% endunless %}
 </main>
+
+{% include post-previews.html active_id=page.id %}

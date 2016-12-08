@@ -1,6 +1,6 @@
 ---
 title: Pigeon Guillemot
-date: 1923-01-01
+date: 1923-08-01
 image: /uploads/14.jpg
 tags: fauna
 ---

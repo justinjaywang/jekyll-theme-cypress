@@ -1,6 +1,6 @@
 ---
 title: Marguerite Carnation
-date: 1902-01-01
+date: 1902-07-01
 image: /uploads/20.jpg
 tags: horticulture
 ---

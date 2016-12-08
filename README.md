@@ -32,10 +32,12 @@ Setting | Description | Default
 --- | --- | ---
 `show_title` | Boolean to show title | `true`
 `title_image` | Custom title image URL to replace text title |
-`show_description` | Boolean to show description below the title | `false`
+`show_description` | Boolean to show description below the title (description is specified in `description`) | `false`
 `show_permalink_index` | Boolean to show index thumbnails on permalink pages | `true`
+`show_date` | Boolean to show date on permalink pages | `true`
 `date_format` | Date [format](https://shopify.github.io/liquid/filters/date/) | `"%b %-d, %Y"` (outputs to `Jun 7, 2016`)
 `post_sort` | Sort order for posts in the index, such as by `'position'` (the drag and drop order in Siteleaf) or '`title`' | Date, reversed
+`footer_text` | Markdown text to include in the footer; hidden if not specified |
 
 ### Navigation
 

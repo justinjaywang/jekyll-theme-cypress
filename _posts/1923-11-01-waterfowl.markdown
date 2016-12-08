@@ -1,6 +1,6 @@
 ---
 title: Waterfowl
-date: 1923-01-01
+date: 1923-11-01
 image: /uploads/4.jpg
 tags: fauna
 ---

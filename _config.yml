@@ -2,7 +2,7 @@ title: Cypress
 timezone: America/New_York
 url: 
 description: > #
-  Cypress is a Siteleaf theme for portfolios.
+  A theme for portfolios.
 collections:
   posts:
     title: Posts
@@ -46,8 +46,11 @@ show_title:
 title_image: 
 show_description: true
 show_permalink_index: 
-date_format: '%b %-d, %Y'
+show_date: 
+date_format: '%b %Y'
 post_sort: 'title'
+footer_text: > #
+  Running on [Siteleaf](http://www.siteleaf.com)
 nav:
 - title: About
   url: /about/

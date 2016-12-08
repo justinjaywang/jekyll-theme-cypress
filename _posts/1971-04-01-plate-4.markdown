@@ -1,6 +1,6 @@
 ---
 title: Plate 4
-date: 1971-01-01
+date: 1971-04-01
 image: /uploads/3.jpg
 tags: science
 ---

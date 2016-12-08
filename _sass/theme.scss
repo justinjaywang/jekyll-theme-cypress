@@ -34,6 +34,8 @@ body {
   color: $color--primary;
   background: $color--background;
   text-align: center;
+  margin-top: $v*2;
+  margin-bottom: $v*2;
 }
 img,
 video,
@@ -45,6 +47,13 @@ a {
   color: inherit;
   &:hover {
     text-decoration: none;
+  }
+}
+.header__title__link,
+.post-preview__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -59,12 +68,6 @@ h6 {
   font-family: $font-family--headings;
   font-weight: $font-weight--headings;
   line-height: $line-height--headings;
-  a {
-    text-decoration: none;
-  }
-}
-p {
-  margin-bottom: $v;
 }
 strong,
 b {
@@ -159,12 +162,66 @@ i {
 }
 
 // header
+// ------
+
 .header {
-  margin-top: $v;
-  margin-bottom: $v;
+  margin-bottom: $v*4;
 }
 .header__nav__item {
   display: inline-block;
-  padding-left: 0.333333em;
-  padding-right: 0.333333em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.header__title,
+.header__description,
+.header__nav {
+  margin-bottom: $v;
+}
+
+// post-preview
+// ------------
+
+.post-previews {
+  margin-bottom: $v*6;
+}
+.post-preview {
+  margin-bottom: $v*2;
+}
+.post-preview__link {
+  &:active {
+    .post-preview__thumbnail {
+      @include translate3d(0, 1px, 0);
+    }
+  }
+}
+.post-preview__thumbnail {
+  margin-bottom: $v*0.5;
+}
+
+// permalink
+// ---------
+
+.main {
+  margin-bottom: $v*6;
+}
+.main__title {
+  margin-bottom: $v;
+}
+.main__date {
+  color: $color--secondary;
+}
+.longform {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  pre,
+  img,
+  video,
+  iframe {
+    margin-bottom: $v;
+  }
 }

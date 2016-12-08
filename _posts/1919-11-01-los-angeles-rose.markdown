@@ -1,6 +1,6 @@
 ---
 title: Los Angeles Rose
-date: 1919-01-01
+date: 1919-11-01
 image: /uploads/24.jpg
 tags: horticulture
 ---

@@ -15,7 +15,7 @@ $max-width--sm: ($min-width--md - 1);
 $max-width--md: ($min-width--lg - 1);
 $max-width--lg: ($min-width--xl - 1);
 
-$max-width--container--narrow: 37rem;
+$max-width--container--narrow: 37rem; // TO DO: move this to styles.scss
 $max-width--container--wide:   1200px;
 
 $gutter--sm: 4.166667%;
