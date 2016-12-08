@@ -1,0 +1,12 @@
+---
+title: Plate 4
+date: 1971-01-01
+image: /uploads/3.jpg
+tags: science
+---
+
+![](/uploads/3.jpg)
+
+Bulletin of the Southern California Academy of Sciences.
+
+[Source](https://flic.kr/p/xeMASF)

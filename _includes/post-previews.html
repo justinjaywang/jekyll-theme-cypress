@@ -1,6 +1,11 @@
 <ul class="post-previews container container--wide">
   <div class="row">
-    {% for post in site.posts %}
+    {% if site.theme_sort %}
+      {% assign sorted_posts = site.posts | sort: site.theme_sort %}
+    {% else %}
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% endif %}
+    {% for post in sorted_posts %}
       <li class="post-preview col quarter">
         {% if post.image %}
           <a href="{{ post.url }}">

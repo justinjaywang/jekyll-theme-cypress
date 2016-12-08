@@ -1,19 +1,19 @@
-# Maple
+# jekyll-theme-maple
 
-Portfolio theme for Jekyll and Siteleaf.
+A portfolio theme for Jekyll and Siteleaf.
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "maple"
+gem "jekyll-theme-maple"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: maple
+theme: jekyll-theme-maple
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install maple
+    $ gem install jekyll-theme-maple
 
 ## Usage
 

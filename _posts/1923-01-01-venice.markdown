@@ -1,0 +1,12 @@
+---
+title: Venice
+date: 1923-01-01
+image: /uploads/8.jpg
+tags: postcards
+---
+
+![](/uploads/8.jpg)
+
+Scenic railway and bathing beach, Venice, Calif.
+
+[Source](https://flic.kr/p/qFbqon)

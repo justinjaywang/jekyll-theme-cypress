@@ -31,7 +31,7 @@ exclude:
 - README*
 - node_modules
 - '.gitignore'
-theme: maple
+theme: jekyll-theme-maple
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: |2+
@@ -41,4 +41,5 @@ excerpt_separator: |2+
 sass:
   style: compressed
 repository: 
-date_format: '%b %-d, %Y'
+theme_date_format: '%b %-d, %Y'
+theme_sort: 'position'
