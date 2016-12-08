@@ -32,31 +32,18 @@ Setting | Description | Default
 --- | --- | ---
 `show_title` | Boolean to show title | `true`
 `title_image` | Custom title image URL to replace text title |
-`show_description` | Boolean to show description below the title (description is specified in `description`) | `false`
+`description_text` | (Markdown) text description that appears below the title; hidden if not included |
+`footer_text` | (Markdown) text to include in the footer; footer will be hidden if not included |
 `show_permalink_index` | Boolean to show index thumbnails on permalink pages | `true`
 `show_date` | Boolean to show date on permalink pages | `true`
 `date_format` | Date [format](https://shopify.github.io/liquid/filters/date/) | `"%b %-d, %Y"` (outputs to `Jun 7, 2016`)
 `post_sort` | Sort order for posts in the index, such as by `'position'` (the drag and drop order in Siteleaf) or '`title`' | Date, reversed
-`footer_text` | Markdown text to include in the footer; hidden if not specified |
-
-### Navigation
-
-Specify the navigation page links that appear below the title in `_config.yml`:
-
-```
-nav:
-- title: About
-  url: /about/
-- title: Contact
-  url: https://twitter.com/siteleaf
-```
 
 ### Custom styles
 
 The theme comes with a stylesheet, `/assets/styles.scss`, where you can edit color and typography variables.
 
-TO DO: edit these when finalized
-```
+```scss
 // colors
 
 $color--primary:    #333;
@@ -70,11 +57,35 @@ $font-size--mobile:  14px;
 
 $font-family--body:     monospace;
 $font-weight--body:     400;
-$line-height--body:     1.5;
+$line-height--body:     1.4;
 
 $font-family--headings: sans-serif;
 $font-weight--headings: 700;
-$line-height--headings: 1.25;
+$line-height--headings: 1.4;
+```
+
+### Additional pages
+
+You can create additional pages, like an About page (`about.markdown`), which will be compiled at the URL `/about/`.
+
+```
+---
+layout: page
+---
+
+This is the body of the page.
+```
+
+### Navigation
+
+You can show navigation page links (both internal and external) in a horizontal list below the title. Add these in `_config.yml`:
+
+```yaml
+nav:
+- title: About
+  url: /about/
+- title: GitHub
+  url: https://github.com/justinjaywang/jekyll-theme-cypress
 ```
 
 ### Google Analytics

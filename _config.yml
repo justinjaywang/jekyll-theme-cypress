@@ -2,7 +2,7 @@ title: Cypress
 timezone: America/New_York
 url: 
 description: > #
-  A theme for portfolios.
+  A Jekyll theme for portfolios.
 collections:
   posts:
     title: Posts
@@ -49,10 +49,12 @@ show_permalink_index:
 show_date: 
 date_format: '%b %Y'
 post_sort: 'title'
+description_text: > #
+  A theme for portfolios.
 footer_text: > #
   Running on [Siteleaf](http://www.siteleaf.com)
 nav:
 - title: About
   url: /about/
-- title: Twitter
-  url: https://twitter.com/justinjaywang
+- title: GitHub
+  url: https://github.com/justinjaywang/jekyll-theme-cypress

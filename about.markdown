@@ -2,6 +2,6 @@
 layout: page
 ---
 
-Carlton dance business casual dial-up t-shirts zebra stripes lisa frank. Pop punk oversized sweaters punk neon colors, headbands sugar ray super mario world inflatable furniture harrison ford. Fly you’ve got mail stonewashed blue jeans occaecat sed. Spiked hair hulk hogan hey arnold cutoff jeans, magic johnson velit giga pets yo quiero taco bell.
+Seaforthia elegans. One of the most beautiful of the palm family, and one of the finest subjects in cultivation for the conservatory, greenhouse or subtropical garden. Leaves from 2 to 10 feet in length, dark green. 
 
-Pontiac trans sport cornrows napster velit flip flops. Dallas cowboys troll dolls savage garden ain’t no thang jagged little pill, frosted tips bucket hats full house crimped hair beepers. Boy meets world rayon shirts cargo pants mario lemieux, proident once you pop you can’t stop accent braids dotcom bubble. Scrolling text sports utility vehicles korn dolor.
+Native of New South Wales. The well-known California Fan Palm, which also goes under the names of Pritchardia filamentosa and Brahea filamentosa; very hardy. Six fine varieties, viz., deserti, lechequilla, Palmeri, Schottii, Shawii and virginica.

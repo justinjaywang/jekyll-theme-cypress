@@ -106,13 +106,16 @@ i {
   }
   @include flexbox;
   @include flex-wrap(wrap);
+  @include align-items(flex-end);
 }
 .col {
   padding-left: $gutter/2;
   padding-right: $gutter/2;
+  margin-bottom: $gutter*5;
   @include max-width($max-width--sm) {
     padding-left: $gutter--sm/2;
     padding-right: $gutter--sm/2;
+    margin-bottom: $gutter--sm*5;
   }
 }
 .quarter {
@@ -182,10 +185,7 @@ i {
 // ------------
 
 .post-previews {
-  margin-bottom: $v*6;
-}
-.post-preview {
-  margin-bottom: $v*2;
+  margin-bottom: $v*8;
 }
 .post-preview__link {
   &:active {
@@ -195,6 +195,7 @@ i {
   }
 }
 .post-preview__thumbnail {
+  min-width: 100%;
   margin-bottom: $v*0.5;
 }
 
@@ -202,7 +203,7 @@ i {
 // ---------
 
 .main {
-  margin-bottom: $v*6;
+  margin-bottom: $v*8;
 }
 .main__title {
   margin-bottom: $v;
