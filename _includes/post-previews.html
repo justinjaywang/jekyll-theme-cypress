@@ -1,7 +1,7 @@
 <ul class="post-previews container container--wide">
   <div class="row">
-    {% if site.theme_sort %}
-      {% assign sorted_posts = site.posts | sort: site.theme_sort %}
+    {% if site.post_sort %}
+      {% assign sorted_posts = site.posts | sort: site.post_sort %}
     {% else %}
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% endif %}

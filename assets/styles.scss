@@ -3,194 +3,25 @@
 
 @charset "utf-8";
 
-// imports
-// -------
+// colors
 
-@import 'reset';
-@import 'mixins';
-@import 'variables';
-
-// base
-// ----
-
-*,
-*:before,
-*:after {
-  @include box-sizing(inherit);
-}
-html,
-body {
-  overflow-x: hidden;
-}
-html {
-  height: 100%;
-  @include box-sizing(border-box);
-  font-size: $font-size--html;
-  @include max-width($max-width--sm) {
-    font-size: $font-size--html-sm;
-  }
-}
-body {
-  font-family: $font-family--body;
-  line-height: $line-height--base;
-  @include antialias;
-  overflow-x: hidden;
-  color: $color--gray-darker;
-  background: $color--white;
-  text-align: center;
-}
-img,
-video,
-iframe {
-  @include responsive-image;
-}
-a {
-  text-decoration: underline;
-  color: inherit;
-  &:hover {
-    text-decoration: none;
-  }
-}
+$color--primary:    #333;
+$color--secondary:  #999;
+$color--background: #fff;
 
 // typography
-// ----------
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family--headings;
-  font-weight: $font-weight--headings;
-  a {
-    text-decoration: none;
-  }
-}
-p {
-  margin-bottom: $v;
-}
-strong,
-b {
-  font-weight: $font-weight--bold;
-}
-em,
-i {
-  font-style: italic;
-}
-pre,
-code,
-kbd,
-samp {
-  font-family: $font-family--monospace;
-  overflow: auto;
-  white-space: pre;
-}
-// pre,
-// code {
-// }
-// pre {
-//   padding: 1em;
-//   code {
-//     background: transparent;
-//   }
-// }
-// hr {
-//   border: 0;
-//   height: 1px;
-//   width: 100%;
-//   background: rgba($color--black, 0.075);
-// }
 
-// grid
-// ----
+$font-size--desktop: 16px;
+$font-size--mobile:  14px;
 
-.container {
-  width: 100%;
-  @include margin-center;
-  padding-left: $gutter;
-  padding-right: $gutter;
-  @include max-width($max-width--sm) {
-    padding-left: $gutter--sm;
-    padding-right: $gutter--sm;
-  }
-}
-.container--narrow {
-  max-width: $max-width--container--narrow;
-}
-.container--wide {
-  max-width: $max-width--container--wide;
-}
-.row {
-  margin-left: -$gutter/2;
-  margin-right: -$gutter/2;
-  @include max-width($max-width--sm) {
-    margin-left: -$gutter--sm/2;
-    margin-right: -$gutter--sm/2;
-  }
-  @include flexbox;
-  @include flex-wrap(wrap);
-}
-.col {
-  padding-left: $gutter/2;
-  padding-right: $gutter/2;
-  @include max-width($max-width--sm) {
-    padding-left: $gutter--sm/2;
-    padding-right: $gutter--sm/2;
-  }
-}
-.quarter {
-  width: 1/4*100%;
-  @include max-width($max-width--lg) {
-    width: 1/3*100%;
-  }
-  @include max-width($max-width--md) {
-    width: 1/2*100%;
-  }
-  @include max-width($max-width--xs) {
-    width: 100%;
-  }
-}
-.three-quarters {
-  width: 3/4*100%;
-  @include max-width($max-width--lg) {
-    width: 2/3*100%;
-  }
-  @include max-width($max-width--md) {
-    width: 1/2*100%;
-  }
-  @include max-width($max-width--xs) {
-    width: 100%;
-  }
-}
-.third {
-  width: 1/3*100%;
-  @include max-width($max-width--md) {
-    width: 1/2*100%;
-  }
-  @include max-width($max-width--xs) {
-    width: 100%;
-  }
-}
-.two-thirds {
-  width: 2/3*100%;
-  @include max-width($max-width--sm) {
-    width: 100%;
-  }
-}
-.half {
-  width: 1/2*100%;
-  @include max-width($max-width--md) {
-    width: 100%;
-  }
-}
+$font-family--body:     monospace;
+$font-weight--body:     400;
+$line-height--body:     1.5;
 
-// header
-.header {
-  margin-top: $v;
-  margin-bottom: $v;
-}
-.header__nav__item {
-  display: inline-block;
-  padding-left: 0.333333em;
-  padding-right: 0.333333em;
-}
+$font-family--headings: sans-serif;
+$font-weight--headings: 700;
+$line-height--headings: 1.25;
+
+// theme import
+
+@import 'theme';

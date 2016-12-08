@@ -4,29 +4,84 @@ A portfolio theme for Jekyll and Siteleaf.
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Add the theme's gem to your site's `Gemfile`:
 
 ```ruby
 gem "jekyll-theme-cypress"
 ```
 
-And add this line to your Jekyll site:
+Specify the `theme` in your site's `_config.yml`:
 
 ```yaml
 theme: jekyll-theme-cypress
 ```
 
-And then execute:
+Install:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-theme-cypress
+```
+$ bundle
+```
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+### Configuration
+
+You can set the following options in your site's `_config.yml`:
+
+Setting | Description | Default
+--- | --- | ---
+`show_title` | Boolean to show title | `true`
+`title_image` | Custom title image URL to replace text title |
+`show_description` | Boolean to show description below the title | `false`
+`show_permalink_index` | Boolean to show index thumbnails on permalink pages | `true`
+`date_format` | Date [format](https://shopify.github.io/liquid/filters/date/) | `"%b %-d, %Y"` (outputs to `Jun 7, 2016`)
+`post_sort` | Sort order for posts in the index, such as by `'position'` (the drag and drop order in Siteleaf) or '`title`' | Date, reversed
+
+### Navigation
+
+Specify the navigation page links that appear below the title in `_config.yml`:
+
+```
+nav:
+- title: About
+  url: /about/
+- title: Contact
+  url: https://twitter.com/siteleaf
+```
+
+### Custom styles
+
+The theme comes with a stylesheet, `/assets/styles.scss`, where you can edit color and typography variables.
+
+TO DO: edit these when finalized
+```
+// colors
+
+$color--primary:    #333;
+$color--secondary:  #999;
+$color--background: #fff;
+
+// typography
+
+$font-size--desktop: 16px;
+$font-size--mobile:  14px;
+
+$font-family--body:     monospace;
+$font-weight--body:     400;
+$line-height--body:     1.5;
+
+$font-family--headings: sans-serif;
+$font-weight--headings: 700;
+$line-height--headings: 1.25;
+```
+
+### Google Analytics
+
+You can enable Google Anaytics in production in your site's `_config.yml` by specifying the tracking code:
+
+```yaml
+google_analytics: UA-XXXXXXXX-X
+```
 
 ## Development
 

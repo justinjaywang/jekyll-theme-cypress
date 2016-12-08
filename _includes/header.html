@@ -3,7 +3,7 @@
   <nav class="header__nav">
     <ul class="header__nav__items">
       {% capture nav %}
-        {% for item in site.data.navigation %}
+        {% for item in site.nav %}
           <li class="header__nav__item">
             <a href="{{ item.url }}">{{ item.title }}</a>
           </li>{% unless forloop.last %}{{ site.nav_separator | default: '' }}{% endunless %}

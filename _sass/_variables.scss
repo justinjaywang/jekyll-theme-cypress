@@ -1,39 +1,7 @@
-// colors
-// ------
-
-$color--gray-darker:  #333;
-$color--gray-dark:    #666;
-$color--gray:         #999;
-$color--gray-light:   #ccc;
-$color--white:        #fff;
-
-// typography
-// ----------
-
-$font-size--html:    16px;
-$font-size--html-sm: 14px;
-
-$font-size--large:   1.25em;
-$font-size--small:   0.916667em;
-$font-size--smaller: 0.833333em;
-
-$font-family--sans-serif: sans-serif;
-$font-family--monospace:  monospace;
-
-$font-weight--normal: 400;
-$font-weight--bold:   700;
-
-$line-height--tight: 1.25;
-$line-height--base:  1.5;
-
-$font-family--body:     $font-family--monospace;
-$font-family--headings: $font-family--sans-serif;
-$font-weight--headings: $font-weight--bold;
-
 // sizing and spacing
 // ------------------
 
-$v: $line-height--base * 1rem;
+$v: $line-height--body * 1rem;
 
 // grid
 // ----

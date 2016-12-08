@@ -40,7 +40,16 @@ excerpt_separator: |2+
 
 sass:
   style: compressed
-repository: 
-theme_date_format: '%b %-d, %Y'
-theme_sort: 'title'
-theme_title_image: 
+repository: justinjaywnag/jekyll-theme-cypress
+google_analytics: 
+show_title: 
+title_image: 
+show_description: true
+show_permalink_index: 
+date_format: '%b %-d, %Y'
+post_sort: 'title'
+nav:
+- title: About
+  url: /about/
+- title: Twitter
+  url: https://twitter.com/justinjaywang
