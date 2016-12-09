@@ -50,7 +50,6 @@ You can create additional pages, like an About page (`about.markdown`), which wi
 ```
 ---
 title: About
-layout: page
 ---
 
 This is the body of the page.
