@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Justin Jay Wang"]
   spec.email         = ["justinjaywang@gmail.com"]
 
-  spec.summary       = %q{Theme for portfolios}
+  spec.summary       = %q{Theme for portfolios.}
   spec.homepage      = "https://github.com/justinjaywang/jekyll-theme-cypress"
   spec.license       = "MIT"
 

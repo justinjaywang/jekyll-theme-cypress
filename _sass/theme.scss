@@ -26,15 +26,15 @@ html {
   }
 }
 body {
+  line-height: $line-height--body;
   font-family: $font-family--body;
   font-weight: $font-weight--body;
-  line-height: $line-height--body;
+  font-size: $font-size--body;
+  color: $color--body;
+  background: $color--background;
   @include antialias;
   overflow-x: hidden;
-  color: $color--primary;
-  background: $color--background;
   text-align: center;
-  margin-top: $v*2;
   margin-bottom: $v*2;
 }
 img,
@@ -55,27 +55,6 @@ a {
   &:hover {
     text-decoration: underline;
   }
-}
-
-// typography
-// ----------
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family--headings;
-  font-weight: $font-weight--headings;
-  line-height: $line-height--headings;
-}
-strong,
-b {
-  font-weight: 700;
-}
-em,
-i {
-  font-style: italic;
 }
 
 // grid
@@ -168,7 +147,8 @@ i {
 // ------
 
 .header {
-  margin-bottom: $v*4;
+  margin-top: $margin-top--header;
+  margin-bottom: $margin-bottom--header;
 }
 .header__nav__item {
   display: inline-block;
@@ -179,6 +159,12 @@ i {
 .header__description,
 .header__nav {
   margin-bottom: $v;
+}
+.header__title {
+  font-family: $font-family--site-title;
+  font-weight: $font-weight--site-title;
+  font-size: $font-size--site-title;
+  color: $color--site-title;
 }
 
 // post-preview
@@ -198,6 +184,12 @@ i {
   min-width: 100%;
   margin-bottom: $v*0.5;
 }
+.post-preview__title {
+  font-family: $font-family--thumbnail-title;
+  font-weight: $font-weight--thumbnail-title;
+  font-size: $font-size--thumbnail-title;
+  color: $color--thumbnail-title;
+}
 
 // permalink
 // ---------
@@ -207,9 +199,13 @@ i {
 }
 .main__title {
   margin-bottom: $v;
+  font-family: $font-family--post-title;
+  font-weight: $font-weight--post-title;
+  font-size: $font-size--post-title;
+  color: $color--post-title;
 }
 .main__date {
-  color: $color--secondary;
+  color: $color--date;
 }
 .longform {
   h1,
@@ -225,4 +221,19 @@ i {
   iframe {
     margin-bottom: $v;
   }
+  strong,
+  b {
+    font-weight: 700;
+  }
+  em,
+  i {
+    font-style: italic;
+  }
+}
+
+// footer
+// ------
+
+.footer {
+  color: $color--footer;
 }

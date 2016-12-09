@@ -31,7 +31,7 @@ You can set the following options in your site's `_config.yml`:
 Setting | Description | Default
 --- | --- | ---
 `show_title` | Boolean to show title | `true`
-`title_image` | Custom title image URL to replace text title |
+`title_image` | URL to an optional custom title image to replace text title |
 `description_text` | (Markdown) text description that appears below the title; hidden if not included |
 `footer_text` | (Markdown) text to include in the footer; footer will be hidden if not included |
 `show_permalink_index` | Boolean to show index thumbnails on permalink pages | `true`
@@ -41,28 +41,7 @@ Setting | Description | Default
 
 ### Custom styles
 
-The theme comes with a stylesheet, `/assets/styles.scss`, where you can edit color and typography variables.
-
-```scss
-// colors
-
-$color--primary:    #333;
-$color--secondary:  #999;
-$color--background: #fff;
-
-// typography
-
-$font-size--desktop: 16px;
-$font-size--mobile:  14px;
-
-$font-family--body:     monospace;
-$font-weight--body:     400;
-$line-height--body:     1.4;
-
-$font-family--headings: sans-serif;
-$font-weight--headings: 700;
-$line-height--headings: 1.4;
-```
+The theme comes with a stylesheet, `/assets/styles.scss`, where you can edit variables, including font sizes and colors.
 
 ### Additional pages
 
@@ -70,6 +49,7 @@ You can create additional pages, like an About page (`about.markdown`), which wi
 
 ```
 ---
+title: About
 layout: page
 ---
 
