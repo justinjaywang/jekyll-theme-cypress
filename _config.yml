@@ -44,13 +44,10 @@ repository: justinjaywnag/jekyll-theme-cypress
 google_analytics: 
 show_title: 
 title_image: 
-show_description: true
 show_permalink_index: 
 show_date: 
 date_format: '%b %Y'
 post_sort: 'title'
-description_text: > #
-  A theme for portfolios.
 footer_text: > #
   Running on [Siteleaf](http://www.siteleaf.com)
 nav:

@@ -52,6 +52,8 @@ a {
 .header__title__link,
 .post-preview__link {
   text-decoration: none;
+}
+.post-preview__link {
   &:hover {
     text-decoration: underline;
   }
