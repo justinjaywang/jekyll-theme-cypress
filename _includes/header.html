@@ -1,6 +1,10 @@
 <header class="header container container--narrow">
   {% unless site.show_title == false %}
-  <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
+    {% if site.title_image %}
+      <a href="/" class="header__title__link"><img src="{{ site.title_image }}" class="header__title__image"></a>
+    {% else %}
+      <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
+    {% endif %}
   {% endunless %}
   {% if site.description_text %}
     <section class="header__description">{{ site.description_text | markdownify }}</section>

@@ -43,7 +43,6 @@ sass:
 repository: justinjaywnag/jekyll-theme-cypress
 google_analytics: 
 show_title: 
-title_image: 
 show_permalink_index: 
 show_date: 
 date_format: '%b %Y'
