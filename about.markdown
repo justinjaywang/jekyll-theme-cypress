@@ -1,5 +1,6 @@
 ---
 title: About
+layout: page
 ---
 
 Seaforthia elegans. One of the most beautiful of the palm family, and one of the finest subjects in cultivation for the conservatory, greenhouse or subtropical garden. Leaves from 2 to 10 feet in length, dark green. 
