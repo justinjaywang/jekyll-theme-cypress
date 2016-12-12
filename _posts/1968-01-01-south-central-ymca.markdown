@@ -1,5 +1,5 @@
 ---
-title: Loren Unruh
+title: South Central YMCA
 date: 1968-01-01
 image: /uploads/11.jpg
 tags: photographs

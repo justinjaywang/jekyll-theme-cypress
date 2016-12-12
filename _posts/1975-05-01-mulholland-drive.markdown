@@ -1,5 +1,5 @@
 ---
-title: Mulholland
+title: Mulholland Drive
 date: 1975-05-01
 image: /uploads/13.jpg
 tags: photographs
