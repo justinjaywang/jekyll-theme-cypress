@@ -195,6 +195,10 @@ a {
   font-weight: $font-weight--thumbnail-title;
   font-size: $font-size--thumbnail-title;
   color: $color--thumbnail-title;
+  display: inline-block;
+  .post-preview.active & {
+    background: #ff0;
+  }
 }
 
 // permalink
@@ -234,6 +238,11 @@ a {
   em,
   i {
     font-style: italic;
+  }
+  img,
+  video,
+  iframe {
+    @include margin-center;
   }
 }
 

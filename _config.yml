@@ -42,13 +42,11 @@ sass:
   style: compressed
 repository: justinjaywnag/jekyll-theme-cypress
 google_analytics: 
-show_title: 
 show_permalink_index: 
 show_date: 
 date_format: '%b %Y'
-post_sort: 'title'
-footer_text: > #
-  Running on [Siteleaf](http://www.siteleaf.com)
+sort_by: 'title'
+hide_description: 
 nav:
 - title: About
   url: /about/

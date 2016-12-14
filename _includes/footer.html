@@ -1,3 +1,4 @@
 <footer class="footer container container--narrow">
-  {{ site.footer_text | markdownify }}
+  {% assign footer_text = site.footer_text | default: 'Running on [Siteleaf](http://www.siteleaf.com)' %}
+  {{ footer_text | markdownify }}
 </footer>

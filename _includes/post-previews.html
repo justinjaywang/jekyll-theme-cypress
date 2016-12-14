@@ -3,8 +3,8 @@
 {% endif %}
 <ul class="post-previews container container--wide">
   <div class="row">
-    {% if site.post_sort %}
-      {% assign sorted_posts = site.posts | sort: site.post_sort %}
+    {% if site.sort_by %}
+      {% assign sorted_posts = site.posts | sort: site.sort_by %}
     {% else %}
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% endif %}

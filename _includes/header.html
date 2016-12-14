@@ -1,26 +1,33 @@
 <header class="header container container--narrow">
-  {% unless site.show_title == false %}
-    {% if site.title_image %}
-      <a href="/" class="header__title__link"><img src="{{ site.title_image }}" class="header__title__image"></a>
-    {% else %}
-      <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
-    {% endif %}
-  {% endunless %}
-  {% if site.description_text %}
-    <section class="header__description">{{ site.description_text | markdownify }}</section>
+  {% if site.title_image %}
+    <a href="/" class="header__title__link"><img src="{{ site.title_image }}" class="header__title__image"></a>
+  {% else %}
+    <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
   {% endif %}
-  {% if site.nav %}
-    <nav class="header__nav">
-      <ul class="header__nav__items">
+  {% unless site.hide_description %}
+    <section class="header__description">{{ site.description | markdownify }}</section>
+  {% endunless %}
+  <nav class="header__nav">
+    <ul class="header__nav__items">
+      {% if site.nav %}
         {% capture nav %}
           {% for item in site.nav %}
-            <li class="header__nav__item">
-              <a href="{{ item.url }}">{{ item.title }}</a>
-            </li>{% unless forloop.last %}{{ site.nav_separator | default: '' }}{% endunless %}
+            <li class="header__nav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
           {% endfor %}
         {% endcapture %}
-        {{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
-      </ul>
-    </nav>
-  {% endif %}
+      {% else %}
+        {% capture nav %}
+          {% for item in site.pages %}
+            {% if item.title %}
+              <li class="header__nav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if site.twitter.username %}
+            <li class="header__nav__item"><a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a></li>
+          {% endif %}
+        {% endcapture %}
+      {% endif %}
+      {{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
+    </ul>
+  </nav>
 </header>
