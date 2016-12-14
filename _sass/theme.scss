@@ -30,7 +30,7 @@ body {
   font-family: $font-family--body;
   font-weight: $font-weight--body;
   font-size: $font-size--body;
-  color: $color--body;
+  color: $color--primary;
   background: $color--background;
   @include antialias;
   overflow-x: hidden;
@@ -149,8 +149,8 @@ a {
 // ------
 
 .header {
-  margin-top: $margin-top--header;
-  margin-bottom: $margin-bottom--header;
+  margin-top: $v*3;
+  margin-bottom: $v*4.5;
 }
 .header__nav__item {
   display: inline-block;
@@ -164,10 +164,7 @@ a {
   margin-bottom: $v;
 }
 .header__title {
-  font-family: $font-family--site-title;
-  font-weight: $font-weight--site-title;
-  font-size: $font-size--site-title;
-  color: $color--site-title;
+  font-weight: 700;
 }
 .header__title__image {
   @include margin-center;
@@ -191,13 +188,8 @@ a {
   margin-bottom: $v*0.5;
 }
 .post-preview__title {
-  font-family: $font-family--thumbnail-title;
-  font-weight: $font-weight--thumbnail-title;
-  font-size: $font-size--thumbnail-title;
-  color: $color--thumbnail-title;
-  display: inline-block;
   .post-preview.active & {
-    background: #ff0;
+    text-decoration: underline;
   }
 }
 
@@ -209,13 +201,10 @@ a {
 }
 .main__title {
   margin-bottom: $v;
-  font-family: $font-family--post-title;
-  font-weight: $font-weight--post-title;
-  font-size: $font-size--post-title;
-  color: $color--post-title;
+  font-weight: 700;
 }
 .main__date {
-  color: $color--date;
+  color: $color--secondary;
 }
 .longform {
   h1,
@@ -250,5 +239,5 @@ a {
 // ------
 
 .footer {
-  color: $color--footer;
+  color: $color--secondary;
 }

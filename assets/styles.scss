@@ -7,34 +7,15 @@
 
 $font-size--desktop: 18px;
 $font-size--mobile:  16px;
-$color--background:  #fff;
-$line-height--body:  1.5;
 
 $font-family--body: sans-serif;
 $font-weight--body: 400;
 $font-size--body:   1em;
-$color--body:       #111;
+$line-height--body: 1.5;
 
-$font-family--site-title: sans-serif;
-$font-weight--site-title: 700;
-$font-size--site-title:   1em;
-$color--site-title:       #111;
-
-$font-family--post-title: sans-serif;
-$font-weight--post-title: 700;
-$font-size--post-title:   1em;
-$color--post-title:       #111;
-
-$font-family--thumbnail-title: sans-serif;
-$font-weight--thumbnail-title: 400;
-$font-size--thumbnail-title:   1em;
-$color--thumbnail-title:       #111;
-
-$color--date:   #aaa;
-$color--footer: #aaa;
-
-$margin-top--header:    $line-height--body * 3rem;
-$margin-bottom--header: $line-height--body * 4.5rem;
+$color--background: #fff;
+$color--primary:    #333;
+$color--secondary:  #999;
 
 // theme import
 
