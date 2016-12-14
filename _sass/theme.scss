@@ -176,21 +176,36 @@ a {
   margin-bottom: $v*8;
 }
 .post-preview {
-  margin-bottom: $gutter*5;
+  margin-bottom: $gutter*4;
   @include max-width($max-width--sm) {
-    margin-bottom: $gutter--sm*5;
+    margin-bottom: $gutter--sm*4;
   }
 }
 .post-preview__link {
   &:active {
-    .post-preview__thumbnail {
+    .post-preview__thumb {
       @include translate3d(0, 1px, 0);
     }
   }
 }
-.post-preview__thumbnail {
-  min-width: 100%;
+// .post-preview__thumb {
+//   min-width: 100%;
+//   margin-bottom: $v*0.5;
+// }
+.post-preview__thumb {
+  padding-top: 100%; // 1×1 aspect ratio default
   margin-bottom: $v*0.5;
+}
+.post-preview__thumb--tile {
+  @include cover;
+  padding-top: 100%;
+}
+.post-preview__thumb--short-tile {
+  @include cover;
+  padding-top: 75%;
+}
+.post-preview__thumb--shelf {
+  @include contain(bottom);
 }
 .post-preview__title {
   .post-preview.active & {

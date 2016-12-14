@@ -30,6 +30,7 @@ You can set the following options in your site's `_config.yml`:
 
 Setting | Description | Default
 --- | --- | ---
+`layout` | Layout of index thumbnail items: `shelf`, `tile`, or `short-tile` | `shelf`
 `title_image` | URL to an optional custom title image to replace text title |
 `is_description_hidden` | Hide description below the title | `false`
 `is_nav_hidden` | Hide navigation links below the title | `false`

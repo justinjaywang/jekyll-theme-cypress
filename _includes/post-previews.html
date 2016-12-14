@@ -10,12 +10,17 @@
     {% else %}
       {% assign sorted_posts = site.posts | sort: 'date' %}
     {% endif %}
+
+    {% assign layout = 'shelf' %}
+    {% if site.layout %}{% comment %}'shelf', 'tile', or 'short-tile'{% endcomment %}
+      {% assign layout = site.layout %}
+    {% endif %}
     {% for post in sorted_posts %}
       {% assign current_id = post.id %}
       <li class="post-preview col quarter{% if current_id == active_id %} active{% endif %}">
         <a href="{{ post.url }}" class="post-preview__link">
           {% if post.image %}
-            <img src="{{ post.image }}" class="post-preview__thumbnail">
+            <div class="post-preview__thumb post-preview__thumb--{{ layout }}" style="background-image: url('{{ post.image }}')"></div>
           {% endif %}
           <h4 class="post-preview__title">{{ post.title }}</h4>
         </a>
