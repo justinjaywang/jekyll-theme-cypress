@@ -42,11 +42,8 @@ sass:
   style: compressed
 repository: justinjaywnag/jekyll-theme-cypress
 google_analytics: 
-show_permalink_index: 
-show_date: 
 date_format: '%b %Y'
 sort_by: 'title'
-hide_description: 
 nav:
 - title: About
   url: /about/

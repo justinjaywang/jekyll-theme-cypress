@@ -15,4 +15,7 @@ layout: default
   {% endunless %}
 </main>
 
-{% include post-previews.html active_id=page.id %}
+{% unless site.is_index_hidden %}
+  {% include post-previews.html active_id=page.id %}
+{% endunless %}
+{% comment %}TO DO: add tags{% endcomment %}

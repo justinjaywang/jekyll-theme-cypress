@@ -4,30 +4,32 @@
   {% else %}
     <h1 class="header__title"><a href="/" class="header__title__link">{{ site.title }}</a></h1>
   {% endif %}
-  {% unless site.hide_description %}
+  {% unless site.is_description_hidden %}
     <section class="header__description">{{ site.description | markdownify }}</section>
   {% endunless %}
-  <nav class="header__nav">
-    <ul class="header__nav__items">
-      {% if site.nav %}
-        {% capture nav %}
-          {% for item in site.nav %}
-            <li class="header__nav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        {% endcapture %}
-      {% else %}
-        {% capture nav %}
-          {% for item in site.pages %}
-            {% if item.title %}
+  {% unless site.is_nav_hidden %}
+    <nav class="header__nav">
+      <ul class="header__nav__items">
+        {% if site.nav %}
+          {% capture nav %}
+            {% for item in site.nav %}
               <li class="header__nav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          {% endcapture %}
+        {% else %}
+          {% capture nav %}
+            {% for item in site.pages %}
+              {% if item.title %}
+                <li class="header__nav__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+            {% if site.twitter.username %}
+              <li class="header__nav__item"><a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a></li>
             {% endif %}
-          {% endfor %}
-          {% if site.twitter.username %}
-            <li class="header__nav__item"><a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a></li>
-          {% endif %}
-        {% endcapture %}
-      {% endif %}
-      {{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
-    </ul>
-  </nav>
+          {% endcapture %}
+        {% endif %}
+        {{ nav | normalize_whitespace | replace: '> ', '>' | replace: ' <', '<' }}
+      </ul>
+    </nav>
+  {% endunless %}
 </header>

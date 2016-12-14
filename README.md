@@ -30,14 +30,14 @@ You can set the following options in your site's `_config.yml`:
 
 Setting | Description | Default
 --- | --- | ---
-`show_title` | Boolean to show title | `true`
 `title_image` | URL to an optional custom title image to replace text title |
-`description_text` | (Markdown) text description that appears below the title; hidden if not included |
-`footer_text` | (Markdown) text to include in the footer; footer will be hidden if not included |
-`show_permalink_index` | Boolean to show index thumbnails on permalink pages | `true`
-`show_date` | Boolean to show date on permalink pages | `true`
+`is_description_hidden` | Hide description below the title | `false`
+`is_nav_hidden` | Hide navigation links below the title | `false`
+`sort_by` | Sort order for posts in the index, including: `'date'`, `'title'`, `'position'` (sorted by drag-and-drop in Siteleaf) | `'date'` 
+`is_sort_reversed` | Reverse the `sort_by` order | `false`
+`is_index_hidden` | Hide index thumbnails on permalink pages | `false`
+`is_date_hidden` | Hide date on permalink pages | `false`
 `date_format` | Date [format](https://shopify.github.io/liquid/filters/date/) | `"%b %-d, %Y"` (outputs to `Jun 7, 2016`)
-`post_sort` | Sort order for posts in the index, such as by `'position'` (the drag and drop order in Siteleaf) or '`title`' | Date, reversed
 
 ### Custom styles
 
@@ -58,7 +58,7 @@ This is the body of the page.
 
 ### Navigation
 
-You can show navigation page links (both internal and external) in a horizontal list below the title. Add these in `_config.yml`:
+Any pages you add will get added to the navigation by default. You can override these with your own navigation links (both internal and external) in a horizontal list below the title. Add these in `_config.yml`:
 
 ```yaml
 nav:
@@ -70,7 +70,7 @@ nav:
 
 ### Google Analytics
 
-You can enable Google Anaytics in production in your site's `_config.yml` by specifying the tracking code:
+Enable Google Anaytics in production by specifying the tracking code in your site's `_config.yml`:
 
 ```yaml
 google_analytics: UA-XXXXXXXX-X

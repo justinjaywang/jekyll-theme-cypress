@@ -62,6 +62,7 @@ a {
 // grid
 // ----
 
+// TO DO: tailor grid for post-previews
 .container {
   width: 100%;
   @include margin-center;
@@ -92,11 +93,9 @@ a {
 .col {
   padding-left: $gutter/2;
   padding-right: $gutter/2;
-  margin-bottom: $gutter*5;
   @include max-width($max-width--sm) {
     padding-left: $gutter--sm/2;
     padding-right: $gutter--sm/2;
-    margin-bottom: $gutter--sm*5;
   }
 }
 .quarter {
@@ -175,6 +174,12 @@ a {
 
 .post-previews {
   margin-bottom: $v*8;
+}
+.post-preview {
+  margin-bottom: $gutter*5;
+  @include max-width($max-width--sm) {
+    margin-bottom: $gutter--sm*5;
+  }
 }
 .post-preview__link {
   &:active {
