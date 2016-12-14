@@ -58,6 +58,27 @@ a {
     text-decoration: underline;
   }
 }
+h1,
+h2 {
+  font-weight: 700;
+}
+pre,
+code {
+  font-family: $font-family--code;
+  font-size: 0.875em;
+  background: rgba($color--primary, 0.05);
+}
+pre {
+  padding: 0.8em;
+}
+code {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+pre code {
+  background: transparent;
+  font-size: 1em;
+}
 
 // grid
 // ----
@@ -162,9 +183,6 @@ a {
 .header__nav {
   margin-bottom: $v;
 }
-.header__title {
-  font-weight: 700;
-}
 .header__title__image {
   @include margin-center;
 }
@@ -188,10 +206,6 @@ a {
     }
   }
 }
-// .post-preview__thumb {
-//   min-width: 100%;
-//   margin-bottom: $v*0.5;
-// }
 .post-preview__thumb {
   padding-top: 100%; // 1×1 aspect ratio default
   margin-bottom: $v*0.5;
@@ -221,7 +235,6 @@ a {
 }
 .main__title {
   margin-bottom: $v;
-  font-weight: 700;
 }
 .main__date {
   color: $color--secondary;
@@ -234,6 +247,9 @@ a {
   h5,
   h6,
   p,
+  ul,
+  ol,
+  blockquote,
   pre,
   img,
   video,
@@ -252,6 +268,50 @@ a {
   video,
   iframe {
     @include margin-center;
+  }
+  ol,
+  ul,
+  blockquote,
+  pre {
+    text-align: left;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  h4 {
+    font-style: italic;
+  }
+  h5,
+  h6 {
+    color: $color--secondary;
+  }
+  h6 {
+    font-style: italic;
+  }
+  blockquote {
+    font-style: italic;
+  }
+  ol,
+  ul,
+  blockquote {
+    padding-left: 1.5em;
+  }
+  sup {
+    font-size: 0.833333em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.333333em;
+  }
+  hr {
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background: rgba($color--primary, 0.2);
+    margin: $v*2 auto;
+    width: 5em;
   }
 }
 
